@@ -71,7 +71,7 @@ http://www.iconfont.cn/collections/index?spm=a313x.7781069.1998910419.2
 angularjs 后台管理模板样式：
 http://gidoor.com/temp/#/app/dashboard-v1
 
-layui css插件
+layui css插件：
 http://www.layui.com/demo/grid.html
 
 安卓调试页：
