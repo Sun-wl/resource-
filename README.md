@@ -48,6 +48,10 @@ http://weex-project.io/cn/
   playground 源码：
   https://github.com/apache/incubator-weex/
 
+js-cookie cookie的轻量级小插件，可在vue中用:
+https://www.npmjs.com/package/js-cookie
+http://www.sohu.com/a/75551172_412810
+
 nat.js github源码：
 https://github.com/natjs/nat
 
