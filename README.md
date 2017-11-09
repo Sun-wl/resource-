@@ -5,6 +5,15 @@
 开源项目网站：
 https://www.oschina.net/project
 
+ES6语法：
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+
+react中文文档：
+https://doc.react-china.org/tutorial/tutorial.html
+
+  技术胖react入门视频：
+  http://jspang.com/2017/08/15/react_basic/
+
 vue：
 https://cn.vuejs.org/v2/guide/
 
