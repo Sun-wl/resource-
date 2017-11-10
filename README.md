@@ -6,7 +6,7 @@
 https://www.oschina.net/project
 
 ES6语法：
-https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+http://es6.ruanyifeng.com/#docs/intro
 
 react中文文档：
 https://doc.react-china.org/tutorial/tutorial.html
