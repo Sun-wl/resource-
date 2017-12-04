@@ -37,7 +37,7 @@ https://cn.vuejs.org/v2/guide/
   https://elemefe.github.io/vue-amap/#/zh-cn/introduction/compatible
   
   axios 用法（vue中数据请求）：
-  https://www.kancloud.cn/yunye/axios/234845
+  https://github.com/axios/axios#handling-errors
   
   mint-ui 官网：
   https://mint-ui.github.io/#!/zh-cn
