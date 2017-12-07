@@ -6,3 +6,6 @@ http://open.gidoor.com
 
 任务堂：
 http://renwutang.gidoor.com/admin
+
+久岳官网：
+http://www.pgmchina.com
