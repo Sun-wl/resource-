@@ -1,0 +1,85 @@
+//常用方法
+
+
+//设置字体自适应
+window.addEventListener('resize', __resize, false);
+__resize();
+function __resize() {
+  var currClientWidth = document.documentElement.clientWidth;
+  //这里是设置屏幕的最大和最小值时候给一个默认值
+  if (currClientWidth > 1200) currClientWidth = 1200;
+  if (currClientWidth < 320) currClientWidth = 320;
+  fontValue = (currClientWidth/1200*100).toFixed(2);
+  // $('html').css('font-size',fontValue + 'px');
+  document.documentElement.style.fontSize = fontValue + 'px';
+};
+
+
+//保留两位小数  >0
+function fix2(obj){
+    obj.value = obj.value.replace(/[^\d.]/g,""); //清除"数字"和"."以外的字符
+    obj.value = obj.value.replace(/^\./g,""); //验证第一个字符是数字
+    obj.value = obj.value.replace(/\.{2,}/g,"."); //只保留第一个, 清除多余的
+    obj.value = obj.value.replace(".","$#$").replace(/\./g,"").replace("$#$",".");
+    obj.value = obj.value.replace(/^(\-)*(\d+)\.(\d\d).*$/,'$1$2.$3'); //只能输入两个小数
+}
+//保留整数  >0
+function fix0(obj){
+    obj.value = obj.value.replace(/[^\d.]/g,""); //清除"数字"和"."以外的字符
+    obj.value = obj.value.replace(/^\./g,""); //验证第一个字符是数字
+    obj.value = obj.value.replace(/\.{2,}/g,"."); //只保留第一个, 清除多余的
+    obj.value = obj.value.replace(".","$#$").replace(/\./g,"").replace("$#$",".");
+    obj.value = obj.value.replace(/^(\-)*(\d+)\.*$/,'$1$2'); //只能输入整数
+}
+
+//排序（从小到大）
+function compare(key){
+    //返回比较器函数
+    return function(a,b){
+        if(a[key]<b[key]){
+            return -1;
+        }else if(a[key]>b[key]){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+}
+
+//获取参数（http://...?id=1&type=2）
+function getUrlParam() {
+    var obj = {}
+    var params = ''
+    if(window.location.search){
+        params = window.location.search.substr(1).split('&')
+        params.forEach(function(item){
+            var a = item.split('=')
+            obj[a[0]] = a[1]
+        })
+    }
+    return obj
+}
+
+//获取参数（http://.../1）
+function urlParam() {
+    var params = window.location.pathname.split('/')
+    return params[params.length-1]
+}
+
+
+//上传图片前选择图片并预览图片
+$('#uploaderInput').change(function (e){
+    var src, url = window.URL || window.webkitURL || window.mozURL, file = $('#uploaderInput')[0].files[0];
+    if(file.size>500000){
+        alert("请上传小于500kb的图片");
+        return
+    }
+    if(url){
+        src = url.createObjectURL(file);
+    }else{
+        src = e.target.result;
+    }
+
+    $('#uploaderInput').siblings().css({'margin':'10px 0','width':'300px','height':'150px','background':'url('+src+') no-repeat','background-size': 'contain'});
+
+})
