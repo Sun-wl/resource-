@@ -8,6 +8,9 @@ https://www.oschina.net/project
 ES6语法：
 http://es6.ruanyifeng.com/#docs/intro
 
+daterangepicker:
+http://www.daterangepicker.com/#options
+
 react中文文档：
 https://doc.react-china.org/tutorial/tutorial.html
 
