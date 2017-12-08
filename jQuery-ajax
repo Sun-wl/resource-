@@ -1,0 +1,44 @@
+(function($){
+    $.extend({
+        baseAjax: function (url, data, type, success, error){
+            return new Promise(function(resolve, reject){
+                $.ajax({
+                    url: baseUrl+url,
+                    data:data,
+                    type: type,
+                    dataType:'json',
+                    success:function(res){
+                        resolve(res);
+                        success(res);
+                    },
+                    error:function(res){
+                        reject(res);
+                        error(res)
+                    }
+                });
+            })
+        },
+        postRequest: function(url, data, success){
+            return $.baseAjax(url, data, "POST", success, function(res){console.log(res)});
+        },
+        getRequest: function(url, data, success){
+            return $.baseAjax(url, data, "GET", success, function(res){console.log(res)});
+        }
+    });
+})($);
+
+(function($){
+    $.extend({
+        role: function(success) {
+            return $.getRequest("/admin/roleId", {}, success);
+        },
+        product: {
+            excel: function(success) {
+                return $.getRequest("/excel/open", {}, success);
+            },
+            saveExcel:function(excelJson, success){
+                return $.postRequest("/excel/save", {excelJson:excelJson}, success);
+            }
+        }
+    });
+})($)
