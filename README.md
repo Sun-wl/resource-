@@ -15,6 +15,13 @@ react文档：（http://nav.react-china.org/#docs）
 https://doc.react-china.org/tutorial/tutorial.html
 https://hulufei.gitbooks.io/react-tutorial/content/introduction.html
 
+Flux:
+https://facebook.github.io/flux/
+
+Redux:
+https://redux.js.org/
+
+
 react Native:
 http://facebook.github.io/react-native/
 
