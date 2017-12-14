@@ -14,10 +14,10 @@ http://www.daterangepicker.com/#options
 react文档：（http://nav.react-china.org/#docs）
 https://doc.react-china.org/tutorial/tutorial.html
 https://hulufei.gitbooks.io/react-tutorial/content/introduction.html
+http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html     （阮一峰教程）
 
 Flux:
 https://facebook.github.io/flux
-http://www.ruanyifeng.com/blog/2016/01/flux.html （阮一峰教程）
 
 Redux:
 https://redux.js.org/
