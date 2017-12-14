@@ -16,8 +16,8 @@ https://doc.react-china.org/tutorial/tutorial.html
 https://hulufei.gitbooks.io/react-tutorial/content/introduction.html
 
 Flux:
-https://facebook.github.io/flux/
-http://www.ruanyifeng.com/blog/2016/01/flux.html（阮一峰教程）
+https://facebook.github.io/flux
+http://www.ruanyifeng.com/blog/2016/01/flux.html （阮一峰教程）
 
 Redux:
 https://redux.js.org/
