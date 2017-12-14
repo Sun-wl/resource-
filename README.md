@@ -11,8 +11,10 @@ http://es6.ruanyifeng.com/#docs/intro
 daterangepicker:
 http://www.daterangepicker.com/#options
 
-react中文文档：
+react文档：（http://nav.react-china.org/#docs）
 https://doc.react-china.org/tutorial/tutorial.html
+https://hulufei.gitbooks.io/react-tutorial/content/introduction.html
+
 react Native:
 http://facebook.github.io/react-native/
 
