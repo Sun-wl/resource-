@@ -11,6 +11,9 @@ http://es6.ruanyifeng.com/#docs/intro
 daterangepicker:
 http://www.daterangepicker.com/#options
 
+滚动插件：
+https://ustbhuangyi.github.io/better-scroll/#/examples/en
+
 react文档：（http://nav.react-china.org/#docs）
 https://doc.react-china.org/tutorial/tutorial.html
 https://hulufei.gitbooks.io/react-tutorial/content/introduction.html
