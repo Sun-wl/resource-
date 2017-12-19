@@ -24,6 +24,7 @@ https://facebook.github.io/flux
 
 Redux:
 https://redux.js.org/
+http://cn.redux.js.org/index.html  (中文文档)
 
 
 react Native:
