@@ -17,6 +17,7 @@ https://ustbhuangyi.github.io/better-scroll/#/examples/en
 react文档：（http://nav.react-china.org/#docs）
 https://doc.react-china.org/tutorial/tutorial.html
 https://hulufei.gitbooks.io/react-tutorial/content/introduction.html
+http://react-guide.github.io/react-router-cn/    （react-router）
 http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html     （阮一峰教程）
 
 Flux:
