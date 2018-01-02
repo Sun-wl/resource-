@@ -74,6 +74,7 @@ http://weex-project.io/cn/
   
   weex-ui github源码：
   https://github.com/alibaba/weex-ui
+  https://alibaba.github.io/weex-ui/#/cn/
   
   playground 源码：
   https://github.com/apache/incubator-weex/
