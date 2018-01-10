@@ -8,8 +8,17 @@
                     type: type,
                     dataType:'json',
                     success:function(res){
-                        resolve(res);
-                        success(res);
+                        if(res.code == 200){
+                            success(res);
+                            resolve(res);
+                        }else{
+                            reject(res);
+                            if(res.message){
+                                alert(res.message)
+                            }else{
+                                alert('请求失败')
+                            }
+                        }
                     },
                     error:function(res){
                         reject(res);
@@ -42,3 +51,7 @@
         }
     });
 })($)
+
+使用，eg:
+$.role(function(res){  })
+$.product.saveExcel(excelJson,function(res){  })
