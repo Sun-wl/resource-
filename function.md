@@ -15,7 +15,7 @@ function __resize() {
 };
 
 
-//保留两位小数  >0
+//input(onkeyup方法)保留两位小数  >0
 function fix2(obj){
     obj.value = obj.value.replace(/[^\d.]/g,""); //清除"数字"和"."以外的字符
     obj.value = obj.value.replace(/^\./g,""); //验证第一个字符是数字
@@ -23,7 +23,7 @@ function fix2(obj){
     obj.value = obj.value.replace(".","$#$").replace(/\./g,"").replace("$#$",".");
     obj.value = obj.value.replace(/^(\-)*(\d+)\.(\d\d).*$/,'$1$2.$3'); //只能输入两个小数
 }
-//保留整数  >0
+//input(onkeyup方法)保留整数  >0
 function fix0(obj){
     obj.value = obj.value.replace(/[^\d.]/g,""); //清除"数字"和"."以外的字符
     obj.value = obj.value.replace(/^\./g,""); //验证第一个字符是数字
@@ -46,7 +46,7 @@ function compare(key){
     }
 }
 
-//获取参数（http://...?id=1&type=2）
+//获取url参数（http://...?id=1&type=2）
 function getUrlParam() {
     var obj = {}
     var params = ''
@@ -60,7 +60,7 @@ function getUrlParam() {
     return obj
 }
 
-//获取参数（http://.../1）
+//获取url参数（http://.../1）
 function urlParam() {
     var params = window.location.pathname.split('/')
     return params[params.length-1]
